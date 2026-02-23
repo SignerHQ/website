@@ -52,6 +52,16 @@ h1{font-size:clamp(42px,6vw,72px);font-weight:750;letter-spacing:-.035em;line-he
 .stat-num{font-size:28px;font-weight:700;letter-spacing:-.02em;color:#fff}
 .stat-label{font-size:12px;color:rgba(226,228,234,.35);margin-top:4px;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
 
+/* ── Platforms ────────────────────────────────────────────── */
+.platforms{margin-top:40px;display:flex;flex-direction:column;gap:16px}
+.platform-row{display:flex;align-items:center;justify-content:center;gap:24px}
+.platform-row-label{font-size:11px;color:rgba(226,228,234,.3);letter-spacing:.06em;text-transform:uppercase;font-weight:600;min-width:60px;text-align:right}
+.platform-items{display:flex;gap:12px}
+.platform-item{display:flex;align-items:center;gap:7px;padding:6px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);font-size:12px;color:rgba(226,228,234,.55);font-weight:500;transition:border-color .2s,color .2s}
+.platform-item:hover{border-color:rgba(99,140,255,.15);color:rgba(226,228,234,.8)}
+.platform-item svg{width:15px;height:15px;opacity:.5}
+.platform-item:hover svg{opacity:.8}
+
 /* ── Section ──────────────────────────────────────────────── */
 section{padding:72px 0;position:relative}
 .section-label{font-size:12px;color:rgba(99,140,255,.7);letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:12px}
@@ -265,6 +275,34 @@ footer .container{display:flex;align-items:center;justify-content:space-between}
       <div class="stat">
         <div class="stat-num">0</div>
         <div class="stat-label">Devices Required</div>
+      </div>
+    </div>
+    <div class="platforms">
+      <div class="platform-row">
+        <div class="platform-row-label">Signer</div>
+        <div class="platform-items">
+          <div class="platform-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Mac
+          </div>
+          <div class="platform-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.548l7.046-0.969v6.804H3V5.548zm0 12.904l7.046 0.969v-6.804H3v5.835zM11.046 4.41L21 3v8.383H11.046V4.41zM21 12.617V21l-9.954-1.41v-6.973H21z"/></svg>
+            Windows
+          </div>
+          <div class="platform-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.311.015-.466.046C9.817.503 8.376 2.26 8.376 4.33c0 .236.021.47.063.7a4.02 4.02 0 0 0-.609-.047C5.588 4.984 3.91 6.66 3.91 8.815c0 .52.1 1.03.3 1.51a3.54 3.54 0 0 0-.89-.114C1.548 10.21.04 11.76.04 13.65c0 1.14.56 2.19 1.47 2.84-.22.44-.34.93-.34 1.44 0 1.82 1.48 3.32 3.31 3.32.44 0 .87-.09 1.27-.25.25 1.34 1.43 2.36 2.83 2.36.91 0 1.74-.43 2.28-1.1.54.67 1.37 1.1 2.28 1.1 1.4 0 2.58-1.02 2.83-2.36.4.16.83.25 1.27.25 1.83 0 3.31-1.5 3.31-3.32 0-.51-.12-1-.34-1.44.91-.65 1.47-1.7 1.47-2.84 0-1.89-1.51-3.44-3.37-3.44-.31 0-.61.04-.89.11.2-.48.3-.99.3-1.51 0-2.15-1.68-3.83-3.92-3.83-.21 0-.42.02-.61.05.04-.23.06-.47.06-.7 0-2.07-1.44-3.83-3.66-4.28A3.68 3.68 0 0 0 12.504 0z"/></svg>
+            Linux
+          </div>
+        </div>
+      </div>
+      <div class="platform-row">
+        <div class="platform-row-label">Wallet</div>
+        <div class="platform-items">
+          <div class="platform-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 2H8C6.9 2 6 2.9 6 4v16c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 18h-4v-1h4v1zm3-3H7V5h10v12z"/></svg>
+            Any device with a browser
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -595,7 +633,7 @@ footer .container{display:flex;align-items:center;justify-content:space-between}
           <tr>
             <td>Built-in Tor hidden services</td>
             <td class="signer-col"><span class="check">&#x2713;</span></td>
-            <td><span class="cross">&#x2717;</span></td>
+            <td><span class="partial">~</span></td>
           </tr>
           <tr>
             <td>Free forever</td>
